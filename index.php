@@ -5,43 +5,49 @@
  * Open-sourced under the MIT License
  */
 
+//Default to no textarea shown
 $calculted = false;
 
+//If user submits form
 if($_POST['go']){
+	//Show textarea
 	$calculated = true;
 
-	$m1 = $_POST['m1'];
-	$tu1 = $_POST['tu1'];
-	$w1 = $_POST['w1'];
-	$th1 = $_POST['th1'];
-	$f1 = $_POST['f1'];
+	//Grab all POSTed variables
+	$m1 = htmlspecialchars($_POST['m1']);
+	$tu1 = htmlspecialchars($_POST['tu1']);
+	$w1 = htmlspecialchars($_POST['w1']);
+	$th1 = htmlspecialchars($_POST['th1']);
+	$f1 = htmlspecialchars($_POST['f1']);
 
-	$m2 = $_POST['m2'];
-	$tu2 = $_POST['tu2'];
-	$w2 = $_POST['w2'];
-	$th2 = $_POST['th2'];
-	$f2 = $_POST['f2'];
+	$m2 = htmlspecialchars($_POST['m2']);
+	$tu2 = htmlspecialchars($_POST['tu2']);
+	$w2 = htmlspecialchars($_POST['w2']);
+	$th2 = htmlspecialchars($_POST['th2']);
+	$f2 = htmlspecialchars($_POST['f2']);
 
-	$ml = $_POST['ml'];
-	$tul = $_POST['tul'];
-	$wl = $_POST['wl'];
-	$thl = $_POST['thl'];
-	$fl = $_POST['fl'];
+	$ml = htmlspecialchars($_POST['ml']);
+	$tul = htmlspecialchars($_POST['tul']);
+	$wl = htmlspecialchars($_POST['wl']);
+	$thl = htmlspecialchars($_POST['thl']);
+	$fl = htmlspecialchars($_POST['fl']);
 
-	$m3 = $_POST['m3'];
-	$tu3 = $_POST['tu3'];
-	$w3 = $_POST['w3'];
-	$th3 = $_POST['th3'];
-	$f3 = $_POST['f3'];
+	$m3 = htmlspecialchars($_POST['m3']);
+	$tu3 = htmlspecialchars($_POST['tu3']);
+	$w3 = htmlspecialchars($_POST['w3']);
+	$th3 = htmlspecialchars($_POST['th3']);
+	$f3 = htmlspecialchars($_POST['f3']);
 
-	$m4 = $_POST['m4'];
-	$tu4 = $_POST['tu4'];
-	$w4 = $_POST['w4'];
-	$th4 = $_POST['th4'];
-	$f4 = $_POST['f4'];
+	$m4 = htmlspecialchars($_POST['m4']);
+	$tu4 = htmlspecialchars($_POST['tu4']);
+	$w4 = htmlspecialchars($_POST['w4']);
+	$th4 = htmlspecialchars($_POST['th4']);
+	$f4 = htmlspecialchars($_POST['f4']);
 
-	$total = floatval($_POST['mt']) + floatval($_POST['tut']) + floatval($_POST['wt']) + floatval($_POST['tht']) + floatval($_POST['ft']);
+	//Calculate total hours worked
+	$total = floatval(htmlspecialchars($_POST['mt'])) + floatval(htmlspecialchars($_POST['tut'])) + floatval(htmlspecialchars($_POST['wt'])) + floatval(htmlspecialchars($_POST['tht'])) + floatval(htmlspecialchars($_POST['ft']));
 
+//Create formatted email text
 $hours = "
 Hey Dennis,
 
@@ -64,7 +70,7 @@ Thanks,
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ockers Hour Calculator</title>
+		<title>Ockers Hours Calculator</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -81,6 +87,7 @@ Thanks,
 			</form>
 		</div>
 		<?php
+			//Show the textbox if user submits data
 			if($calculated){
 				echo"
 				<hr>
