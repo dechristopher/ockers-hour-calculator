@@ -90,6 +90,6 @@ Thanks,
 		?>
 		<hr>
 		<p>Created by Andrew DeChristopher 2016</p>
-		<p>Last updated: 6-20-2016
+		<p>Last updated: 6-20-2016</p>
 	</body>
 </html>
