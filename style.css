@@ -1,9 +1,20 @@
 body{
 	text-align: center;
+	font: Helvetica;
+}
+
+h1 {
+	font: Helvetica;
+}
+
+p {
+	font: Helvetica;
+	font-style: italic;
 }
 
 input[type=text]{
 	width: 30px;
+	font: Helvetica;
 }
 
 #form{

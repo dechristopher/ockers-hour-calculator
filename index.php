@@ -97,6 +97,6 @@ Thanks,
 		?>
 		<hr>
 		<p>Created by Andrew DeChristopher 2016</p>
-		<p>Last updated: 6-20-2016</p>
+		<p>Last updated: 8-3-2016</p>
 	</body>
 </html>
