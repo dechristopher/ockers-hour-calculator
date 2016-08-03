@@ -49,7 +49,7 @@ if($_POST['go']){
 
 //Create formatted email text
 $hours = "
-Hey Dennis,
+Hey Nicole,
 
 These are my hours for the week:
 
