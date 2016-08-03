@@ -74,7 +74,7 @@ Thanks,
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h3>Ockers Hours Calculator</h3> <hr>
+		<h2>Ockers Hours Calculator</h2> <hr>
 		<div id="form">
 			<form action="#" method="post">
 				<span>M: </span><input type="text" name="m1" /> - <input type="text" name="m2" /> :: <input type="text" name="ml" /> hour lunch :: <input type="text" name="m3" />-<input type="text" name="m4" /> (<input type="text" name="mt" /> hours total)<br />

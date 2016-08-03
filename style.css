@@ -1,20 +1,20 @@
 body{
 	text-align: center;
-	font: Helvetica;
+	font-family: Helvetica;
 }
 
-h1 {
-	font: Helvetica;
+h2 {
+	font-family: Helvetica;
 }
 
 p {
-	font: Helvetica;
+	font-family: Helvetica;
 	font-style: italic;
 }
 
 input[type=text]{
 	width: 30px;
-	font: Helvetica;
+	font-family: Helvetica;
 }
 
 #form{
