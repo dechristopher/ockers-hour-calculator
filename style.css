@@ -1,6 +1,7 @@
 body{
 	text-align: center;
 	font-family: Helvetica;
+	font-size: 0.8em;
 }
 
 h2 {
@@ -10,6 +11,7 @@ h2 {
 p {
 	font-family: Helvetica;
 	font-style: italic;
+	font-size; 0.7em;
 }
 
 input[type=text]{

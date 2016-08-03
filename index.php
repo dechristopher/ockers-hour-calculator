@@ -82,7 +82,7 @@ Thanks,
 				<span>W: </span><input type="text" name="w1" /> - <input type="text" name="w2" /> :: <input type="text" name="wl" /> hour lunch :: <input type="text" name="w3" />-<input type="text" name="w4" /> (<input type="text" name="wt" /> hours total)<br />
 				<span>T: </span><input type="text" name="th1" /> - <input type="text" name="th2" /> :: <input type="text" name="thl" /> hour lunch :: <input type="text" name="th3" />-<input type="text" name="th4" /> (<input type="text" name="tht" /> hours total)<br />
 				<span>F: </span><input type="text" name="f1" /> - <input type="text" name="f2" /> :: <input type="text" name="fl" /> hour lunch :: <input type="text" name="f3" />-<input type="text" name="f4" /> (<input type="text" name="ft" /> hours total)<br />
-				<span>Name: </span><input type="text" id="name" name="name" /><br />
+				<span>Name: </span><input type="text" id="name" name="name" /><br /><br />
 				<input type="submit" value="Calculate Hours" name="go" />
 			</form>
 		</div>
